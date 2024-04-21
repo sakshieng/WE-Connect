@@ -35,8 +35,8 @@ WEConnect recognizes the rich cultural heritage of India's artisanal crafts and 
 
 ### Frontend
 
-- **Tech Stack:** HTML, CSS, JavaScript
-- **Framework:** Bootstrap
+- **Tech Stack:** JavaScript
+- **Framework:** REACT.Js
 - **Editor:** VS Code
 - Run the project by opening the `index.html` file.
 
@@ -51,6 +51,7 @@ WEConnect recognizes the rich cultural heritage of India's artisanal crafts and 
 - **Database:** Atlas MongoDB
 - **Hosting:** Netlify
 - **Backend Server:** Heroku
+- **Authentication:** Firebase
 
 ## Demo Video
 
