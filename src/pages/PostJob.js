@@ -44,7 +44,7 @@ const PostJob = () => {
                 Post a Job and recruit easily!
               </p>
               <p style={{ fontSize: "18px" }}>
-                Need staff? Spread the word among aspiring women employees and artisans via Gruhini. 
+                Need staff? Spread the word among aspiring women employees and artisans via WE-CONNECT. 
               </p>
               <YourJobs myJobs={myJobs}/>
             </div>

@@ -38,11 +38,15 @@ export default function ResponsiveDialog({ ques, video, instructions, color }) {
         </Button>
       </div>
       <Dialog
-        // minWidth={600}
         fullScreen={fullScreen}
         open={open}
         onClose={handleClose}
         aria-labelledby="responsive-dialog-title"
+        PaperProps={{
+          style: {
+            backgroundImage: `linear-gradient(to bottom right, var(--for-color), var(--tri-color), var(--pri-color))`,
+          },
+        }}
       >
         <DialogTitle className="popup" id="responsive-dialog-title">
           {ques}
@@ -53,9 +57,9 @@ export default function ResponsiveDialog({ ques, video, instructions, color }) {
             height="315"
             src={video}
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
           <DialogContentText className="txt display-linebreak" id="Inst">
             <ol className="instructions-list">

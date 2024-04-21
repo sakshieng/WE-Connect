@@ -8,9 +8,9 @@ import "../style/Empower.css";
 
 export default function Empower() {
   return (
-    <Grid sx={{ paddingRight: 40, paddingLeft: 10 }}>
+    <Grid sx={{ paddingRight: 40, paddingLeft: 10, marginBottom: 20 }}>
       <Navbar />
-      <div className="mt-5">
+      <div className="mt-5 empower">
         <QuoteImg />
         <Cardsnippet />
       </div>

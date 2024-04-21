@@ -2,7 +2,7 @@
 
 .accordion,
 .accordion-item {
-  background-color: var(--for-color) !important;
+  background-color: linear-gradient(to bottom right, var(--for-color), var(--tri-color), var(--pri-color));
 }
 
 .accordion-button,

@@ -158,8 +158,11 @@ hr {
   color: #ffffff !important;
 }
 
-.logo-nav {
-  height: 35px;
+.logo{
+  height: 15;
+}
+.logoName{
+  height: 15;
 }
 
 .navbar-brand svg {

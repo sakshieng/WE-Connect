@@ -1,7 +1,6 @@
 @import "./App.css";
 
 /* AppBar Start */
-
 Link {
   text-decoration: none;
 }
@@ -31,9 +30,14 @@ Button:hover {
 }
 
 .logo {
-  height: 40px;
-  margin: 10px 0px 10px 10px;
+  height: 60px;
+  margin: 5px 0px 5px 5px;
 }
+.logoName {
+  height: 120px;
+  margin: 5px 0px 5px 5px;
+}
+
 
 .gs-nav svg {
   height: 40px;
@@ -54,12 +58,12 @@ Button:hover {
 /* Body Start  */
 
 .body {
-  margin: 20px 60px;
+  margin: 20px 0;
 }
 
 .heading {
   color: var(--sec-color);
-  margin: 20px 0px !important;
+  margin: 2px 0px !important;
   font-size: 50px;
 }
 
@@ -84,7 +88,7 @@ p {
 .CTC2 {
   color: var(--sec-color) !important;
   border-color: var(--sec-color) !important;
-  background-color: #ffffff00 !important;
+  background-color: transparent !important;
 }
 
 .CTC1:hover,
@@ -98,9 +102,9 @@ p {
 
 .women {
   display: flex;
-  margin: 0 auto;
-  /* width: 70% !important; */
-  width: 450px;
+  margin: 20px 0;
+  padding: 0;
+  width: 400px;
 }
 
 /* Body End */
@@ -128,9 +132,6 @@ p {
     margin: 10px !important;
   }
   .women {
-    /* display: block !important;
-    margin: 0 auto !important;
-    width: 300px; */
     display: none;
   }
 }

@@ -15,6 +15,8 @@ import { useState } from 'react';
 import { useAuthContext } from '../../data/auth';
 import { useNavigate } from 'react-router-dom';
 import '../../style/GetStarted.css';
+import logo from '../../assets/logo-women.png';
+import logoName from '../../assets/logo-name.png';
 
 const Login = () => {
 
@@ -64,11 +66,19 @@ const Login = () => {
       //mui end
 
     return ( 
-        <form style={{ color: "var(--sec-color)" , backgroundColor:'white', textAlign:'center', width: '50vw' ,marginLeft : '25vw', marginTop:'40px'}} >
-      
+        <form style={{ color: "var(--sec-color)" , backgroundColor:'linear-gradient(to bottom right, var(--for-color), var(--tri-color), var(--pri-color))', textAlign:'center', width: '50vw' ,marginLeft : '25vw', marginTop:'40px'}} >
+          <Typography
+              className="gs-nav"
+              variant="h6"
+              component="div"
+              sx={{ flexGrow: 1 }}
+            >
+              <img className="logo" src={logo} alt="GetStarted logo" />
+              <img className="logoName" src={logoName} alt="WE-CONNECT" />
+            </Typography>
       <div style={{display:'inline'}}>
         <Typography variant='h4' sx={{fontSize:"30px",mb:3}} >
-          Log in
+          Please login to your account
         </Typography>
       </div>
 

@@ -1,43 +1,52 @@
-/* Start CSS here  */
-
+/* Start CSS here */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif !important;
+:root {
+  --pri-color: #37cbe6; /* Primary color */
+  --sec-color: #2b4dbe; /* Secondary color */
+  --tri-color: #fa9490; /* Tertiary color */
+  --for-color: #ffffff; /* Default background color for light theme */
+  --fiv-color: #000000; /* Default text color for light theme */
+  --txt-color: #3e3e3e; /* Default text color for light theme */
+}
+
+/* Dark theme */
+.dark-theme {
+  --pri-color: #2b4dbe;
+  --sec-color: #37cbe6;
+  --tri-color: #fa9490;
+  --for-color: #040a20; /* Dark background color for dark theme */
+  --fiv-color: #ffffff; /* Light text color for dark theme */
+  --txt-color: #d6d6d6; /* Light text color for dark theme */
 }
 
 body {
-  background-color: var(--for-color);
+  background: linear-gradient(to bottom right, var(--for-color), var(--tri-color), var(--pri-color));
+  background-attachment: fixed;
+  background-size: 300% 300%;
+  color: var(--txt-color);
+  animation: gradientAnimation 30s infinite; 
 }
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+
 
 form {
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid var(--fiv-color);
   border-radius: 10px;
   width: fit-content;
   height: auto;
-  /* margin: 20px 0px 10px 20px; */
   padding: 18px;
-}
-
-:root {
-  --pri-color: #97c1c8;
-  --sec-color: #56669d;
-  --tri-color: #fa9490;
-  --for-color: #ffffff;
-  --fiv-color: #000000;
-  --txt-color: #3e3e3e;
-}
-
-.dark-theme {
-  --pri-color: #56669d;
-  --sec-color: #97c1c8;
-  --tri-color: #fa9490;
-  --for-color: #040a20;
-  --fiv-color: #ffffff;
-  --txt-color: #d6d6d6;
+  background-color: var(--for-color);
 }
 
 /* width */
@@ -98,4 +107,28 @@ form {
 
 input {
   color: var(--txt-color) !important;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    margin: 0 10px;
+  }
+
+  .logo-name {
+    font-size: 18px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
 }

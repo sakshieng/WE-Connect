@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import "../style/Filter.css";
 import "../style/BuyProduct.css";
 import search from "../assets/search.png";
-import gruhini from "../assets/gruhini_of_the_month.png";
+import WECONNECT from "../assets/gruhini_of_the_month.png";
 
 const drawerWidth = 240;
 
@@ -54,18 +54,18 @@ function ResponsiveDrawer() {
                     Hire a housewife, encourage them
                   </h2>
                   <br />
-                  We at gruhini want to provide an opportunity for all those
+                  We at WE-CONNECT want to provide an opportunity for all those
                   ambitius housewives whho wants to express their skills and
                   grow in their career.
                   <br />
                   <br />
                   <h3 className="text-decoration-underline">
-                    Gruhini of the Month
+                    WE-CONNECT of the Month
                   </h3>
                   <img
                     className="rounded mt-3 border"
-                    src={gruhini}
-                    alt={"Gruhini"}
+                    src={WECONNECT}
+                    alt={"WE-CONNECT"}
                   />
                   <h3 className="mt-3">Roshni Upadhyay</h3>
                 </div>
