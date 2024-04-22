@@ -53,6 +53,10 @@ WEConnect recognizes the rich cultural heritage of India's artisanal crafts and 
 - **Backend Server:** Heroku
 - **Authentication:** Firebase
 
+### WorkFlow
+
+![Uploading image.png…]()
+
 ## Demo Video
 
 
